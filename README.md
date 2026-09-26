@@ -46,7 +46,7 @@ The working directory is `/work`. The image runs as UID 1000, and any other UID 
 
 | Package | License | Repository |
 |---|---|---|
-| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | `Unlicense AND MIT AND MIT-0 AND ISC AND BSD-2-Clause AND BSD-3-Clause AND Apache-2.0 AND MPL-2.0 AND GPL-2.0-or-later AND curl AND Zlib AND Unicode-DFS-2016` | [randomcontainers/yt-dlp](https://github.com/randomcontainers/yt-dlp) |
+| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | `Unlicense AND MIT AND MIT-0 AND ISC AND BSD-2-Clause AND BSD-3-Clause AND Apache-2.0 AND MPL-2.0 AND GPL-2.0-or-later AND curl AND Zlib AND Unicode-DFS-2016 AND PSF-2.0` | [randomcontainers/yt-dlp](https://github.com/randomcontainers/yt-dlp) |
 | [FFmpeg](https://ffmpeg.org/) | `GPL-3.0-or-later` | [randomcontainers/ffmpeg](https://github.com/randomcontainers/ffmpeg) |
 
 Also installed:
@@ -73,7 +73,7 @@ The images are rebuilt when a new image of a package above is published, for exa
 
 ## Licenses
 
-The image contents are licensed under `Unlicense AND MIT AND MIT-0 AND ISC AND BSD-2-Clause AND BSD-3-Clause AND Apache-2.0 AND MPL-2.0 AND GPL-2.0-or-later AND curl AND Zlib AND Unicode-DFS-2016 AND GPL-3.0-or-later`. The version of each package is in `/usr/local/share/randomcontainers/<package>/version` and its license files are in `/usr/local/share/randomcontainers/<package>/licenses/`.
+The image contents are licensed under `Unlicense AND MIT AND MIT-0 AND ISC AND BSD-2-Clause AND BSD-3-Clause AND Apache-2.0 AND MPL-2.0 AND GPL-2.0-or-later AND curl AND Zlib AND Unicode-DFS-2016 AND PSF-2.0 AND GPL-3.0-or-later`. The version of each package is in `/usr/local/share/randomcontainers/<package>/version` and its license files are in `/usr/local/share/randomcontainers/<package>/licenses/`.
 
 Corresponding source:
 
