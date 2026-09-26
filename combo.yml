@@ -1,0 +1,5 @@
+# Generated from the combos section of randomcontainers/yt-dlp package.yml by randomcontainers/ci.
+# Do not edit; change package.yml in randomcontainers/yt-dlp instead.
+name: yt-dlp-ffmpeg
+owner: yt-dlp
+with: [ffmpeg]
