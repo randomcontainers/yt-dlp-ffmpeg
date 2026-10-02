@@ -12,7 +12,7 @@ These are unofficial builds, not affiliated with or endorsed by the upstream pro
 docker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/work" ghcr.io/randomcontainers/yt-dlp-ffmpeg "https://www.youtube.com/watch?v=<id>"
 ```
 
-The same images can also be pulled as `randomcontainers.com/yt-dlp-ffmpeg`. The examples in the [yt-dlp README](https://github.com/randomcontainers/yt-dlp#readme) work with this image too.
+The examples in the [yt-dlp README](https://github.com/randomcontainers/yt-dlp#readme) work with this image too.
 
 ## Tags
 
