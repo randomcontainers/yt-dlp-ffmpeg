@@ -65,7 +65,16 @@ gh attestation verify oci://ghcr.io/randomcontainers/yt-dlp-ffmpeg:latest \
   --repo randomcontainers/yt-dlp-ffmpeg --signer-repo randomcontainers/ci
 ```
 
-Images from `ghcr.io/randomcontainers/yt-dlp` are built in [randomcontainers/yt-dlp](https://github.com/randomcontainers/yt-dlp), so verify them with `--repo randomcontainers/yt-dlp --signer-repo randomcontainers/ci`.
+Each image also has a keyless cosign signature from the same workflow, for admission controllers that check cosign signatures:
+
+```sh
+cosign verify ghcr.io/randomcontainers/yt-dlp-ffmpeg:latest \
+  --certificate-identity https://github.com/randomcontainers/ci/.github/workflows/build.yml@refs/tags/v1 \
+  --certificate-oidc-issuer https://token.actions.githubusercontent.com \
+  --certificate-github-workflow-repository randomcontainers/yt-dlp-ffmpeg
+```
+
+Images from `ghcr.io/randomcontainers/yt-dlp` are built in [randomcontainers/yt-dlp](https://github.com/randomcontainers/yt-dlp), so name that repository in `--repo` and `--certificate-github-workflow-repository`.
 
 ## Updates
 
